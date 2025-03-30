@@ -132,7 +132,7 @@ function UploadForm() {
     formData.append('pdf', file);
 
     try {
-      const response = await axios.post('http://localhost:5001/api/upload', formData, {
+      const response = await axios.post('https://ai-tailored-resume.onrender.com/api/upload', formData, {
         headers: {
           'Content-Type': 'multipart/form-data',
         },
@@ -150,7 +150,7 @@ function UploadForm() {
     setTailored('');
 
     try {
-      const response = await axios.post('http://localhost:5001/api/tailor', {
+      const response = await axios.post('https://ai-tailored-resume.onrender.com/api/tailor', {
         resume: resumeText,
         jobDescription: jobDesc,
       });
