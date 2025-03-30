@@ -4,7 +4,7 @@ This is the frontend of the **AI Resume Tailor** app, a tool that lets users aut
 
 ## 🌐 Live Demo
 
-Check out the live app: [https://ai-tailored-resume.vercel.app](https://ai-tailored-resume.vercel.app)
+Check out the live app: [https://ai-tailored-resume.netlify.app/](https://ai-tailored-resume.netlify.app/)
 
 ## 🖥️ Features
 
