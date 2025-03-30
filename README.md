@@ -1,70 +1,75 @@
-# Getting Started with Create React App
+# ✨ AI Resume Tailor - Frontend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is the frontend of the **AI Resume Tailor** app, a tool that lets users automatically tailor their resumes to any job description using AI.
 
-## Available Scripts
+## 🌐 Live Demo
 
-In the project directory, you can run:
+Check out the live app: [https://ai-tailored-resume.vercel.app](https://ai-tailored-resume.vercel.app)
 
-### `npm start`
+## 🖥️ Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Upload a resume as a PDF or paste it directly.
+- Paste a job description.
+- Get a tailored resume powered by OpenAI's GPT model.
+- Beautiful, responsive UI built with React and styled-components.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## ⚙️ Tech Stack
 
-### `npm test`
+- React
+- Styled-components
+- Axios
+- OpenAI API (via backend)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🚀 Getting Started
 
-### `npm run build`
+### 1. Clone the repository
+ai-tailored-resume-frontend
+```bash
+git clone https://github.com/Dibyendu-13/ai-resume-tailor-frontend.git
+cd ai-resume-tailor-frontend
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 2. Install dependencies
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```bash
+npm install
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 3. Start the development server
 
-### `npm run eject`
+```bash
+npm run dev
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+This starts the app on [http://localhost:3000](http://localhost:3000)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 🛠️ Project Structure
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```
+src/
+├── components/
+│   └── UploadForm.jsx
+├── App.jsx
+└── main.jsx
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 📦 Deployment
 
-## Learn More
+This app can be deployed on platforms like Vercel, Netlify, or any static hosting service.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Make sure your backend API is deployed and update API URLs inside `UploadForm.jsx` accordingly.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 🧠 Backend API
 
-### Code Splitting
+Ensure your backend is running and deployed. The frontend expects the following endpoints:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- `POST /api/upload` – accepts a PDF file and returns extracted text
+- `POST /api/tailor` – accepts resume text + job description and returns a tailored resume
 
-### Analyzing the Bundle Size
+## 🤝 Contributing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Pull requests are welcome! For major changes, please open an issue first.
 
-### Making a Progressive Web App
+## 📄 License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+MIT
